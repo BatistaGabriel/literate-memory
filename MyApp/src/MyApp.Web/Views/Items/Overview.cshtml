@@ -1,0 +1,15 @@
+﻿@model MyApp.Web.Models.Item
+@{
+    var items = new List<string> { "Item 1", "Item 2", "Item 3" };
+}
+<p>This is the name of the item: @Model.Name</p>
+
+<p>List of items:</p>
+<ul>
+    @foreach(var item in items)
+    {
+        <li>
+            @item
+        </li>
+    }
+</ul>
